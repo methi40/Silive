@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+
+
+	<link rel="stylesheet" href="main.css">
+</head>
+<body> 
+<canvas id="canvas" style="position: absolute; background-attachment: fixed;background-repeat: no-repeat; color: red; ">
+    <p>your browser doesn't support canvas.</p>
+</canvas>
+	<div class="z-depth-4 card">
+
+		<div class="vector_img"><img src="art220.png">
+		</div>
+        <div class=" row form_body">
+            <h2 class="title">Select Your Test</h2><br><h2 class="title1"></h2>
+            
+               <div class="row">
+                  <form class="col s12">
+                  	
+                  	<div class="vl" style="position: absolute;height: 300px;margin: -40px 1px 1px 0px;"></div>
+                    <div class="container">
+  <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>What do you think?</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="dont">I Don't Know</option>
+    </select>
+ 
+  </div> 
+</div>
+</form>
+</div>
+  <div class="svg-wrapper" style="margin: 20px 1px 1px 70px">
+          <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shape" height="40" width="150"  />
+         
+              <div id="text">
+                <a href=""><span class="spot"></span>Procced <i class=" material-icons forward">arrow_forward</i> </a>
+
+              </div>
+              
+   
+          </svg>
+        </div>
+</div>
+</div>        
+
+
+<script>
+(function($){
+  $(function(){
+    // Plugin initialization
+    $('select').not('.disabled').formSelect();
+  }); 
+})(jQuery); // end of jQuery name space
+</script>
+</body>   
+</html>
+
+
